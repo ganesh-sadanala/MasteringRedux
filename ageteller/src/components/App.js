@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
+import AgeStats from "./AgeStats";
 
 class App extends Component {
   constructor() {
@@ -36,6 +37,7 @@ class App extends Component {
           ></FormControl>
           <Button onClick={this.handleButtonClick}>Submit</Button>
         </Form>
+        <AgeStats date={this.state.birthday} />
       </div>
     );
   }
