@@ -1,14 +1,7 @@
 // root for reducers in an application
-import characters_json from "../data/characters.json";
-import { ADD_CHARACTER } from "../actions/index";
+import { combineReducers } from "redux";
+import heroes from "./heroes_reducer";
+import characters from "./characters_reducer";
 
-function characters(state = characters_json, action) {
-  switch (action.type) {
-    case ADD_CHARACTER:
-      return state.filter((character) => character.id != action.id);
-    default:
-      return state;
-  }
-}
-
-export default characters;
+const rootReducer = combineReducers({ characters, heroes });
+export default rootReducer;
