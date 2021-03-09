@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CharacterList from "./CharacterList";
 import "../styles/index.css";
 import HeroList from "./HeroList";
+import SquadStats from "./SquadStats";
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <h1>SuperSquad</h1>
         <CharacterList />
         <HeroList />
+        <SquadStats />
       </div>
     );
   }
