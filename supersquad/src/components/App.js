@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import CharacterList from "./CharacterList";
 
 class App extends Component {
   render() {
-    return <div></div>;
+    return (
+      <>
+        <h1>SuperSquad</h1>
+        <CharacterList />
+      </>
+    );
   }
 }
 
