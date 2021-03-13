@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FavoriteRecipeList from "./FavoriteRecipeList";
 import RecipeList from "./RecipeList";
 import SearchRecipes from "./SearchRecipes";
 
@@ -9,9 +10,9 @@ class App extends Component {
         <h2>Recipe Finder</h2>
         <SearchRecipes />
         <RecipeList />
+        <FavoriteRecipeList />
       </div>
     );
   }
 }
-
 export default App;
