@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import RecipeList from "./RecipeList";
 import SearchRecipes from "./SearchRecipes";
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
       <div>
         <h2>Recipe Finder</h2>
         <SearchRecipes />
+        <RecipeList />
       </div>
     );
   }
