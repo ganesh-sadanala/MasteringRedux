@@ -1,4 +1,4 @@
-import { SET_RECIPES } from "../actions";
+import { FAVORITE_RECIPE, SET_RECIPES } from "../actions";
 import { combineReducers } from "redux";
 
 function recipes(state = [], action) {
@@ -9,6 +9,15 @@ function recipes(state = [], action) {
       return state;
   }
 }
+function favoriteRecipes(state = [], action) {
+  switch (action.type) {
+    case FAVORITE_RECIPE:
+      state = [...state, action.recipe];
+      return state;
+    default:
+      return state;
+  }
+}
 
-const rootReducer = combineReducers({ recipes });
+const rootReducer = combineReducers({ recipes, favoriteRecipes });
 export default rootReducer;
