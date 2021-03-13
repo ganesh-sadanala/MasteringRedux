@@ -9,6 +9,7 @@ function recipes(state = [], action) {
       return state;
   }
 }
+
 function favoriteRecipes(state = [], action) {
   switch (action.type) {
     case FAVORITE_RECIPE:
